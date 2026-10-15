@@ -1,10 +1,4 @@
-import {
-  ArrowRight,
-  Blocks,
-  Compass,
-  ExternalLink,
-  Route,
-} from "lucide-react";
+import { ArrowRight, Blocks, Compass, ExternalLink, Route } from "lucide-react";
 import { services } from "./data";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
@@ -94,7 +88,9 @@ export function ServicesSection() {
               </div>
             </div>
             <div className="product-badge product-badge--one">MOVE BETTER</div>
-            <div className="product-badge product-badge--two">BUILT FOR PEOPLE</div>
+            <div className="product-badge product-badge--two">
+              BUILT FOR PEOPLE
+            </div>
           </div>
         </Reveal>
       </div>

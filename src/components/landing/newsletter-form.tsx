@@ -9,7 +9,8 @@ export function NewsletterForm() {
   if (subscribed) {
     return (
       <p className="newsletter-success" role="status">
-        <Check size={17} aria-hidden="true" /> You&apos;re on the list. Demo only.
+        <Check size={17} aria-hidden="true" /> You&apos;re on the list. Demo
+        only.
       </p>
     );
   }

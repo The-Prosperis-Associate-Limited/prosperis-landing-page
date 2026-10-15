@@ -12,8 +12,8 @@ export function ContactForm() {
         <CheckCircle2 aria-hidden="true" />
         <h3>Thanks for reaching out.</h3>
         <p>
-          This demo has captured the interaction. Connect the form to your
-          inbox or CRM to receive live enquiries.
+          This demo has captured the interaction. Connect the form to your inbox
+          or CRM to receive live enquiries.
         </p>
         <button type="button" onClick={() => setSubmitted(false)}>
           Send another message
@@ -75,7 +75,8 @@ export function ContactForm() {
       </label>
       <div className="contact-form__footer">
         <p>
-          By sending this form, you agree to our <a href="#privacy">privacy notice</a>.
+          By sending this form, you agree to our{" "}
+          <a href="#privacy">privacy notice</a>.
         </p>
         <button className="button button--lime" type="submit">
           Send enquiry <ArrowRight size={18} aria-hidden="true" />

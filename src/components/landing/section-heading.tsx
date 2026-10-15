@@ -28,7 +28,9 @@ export function SectionHeading({
         {eyebrow}
       </p>
       <h2>{title}</h2>
-      {description ? <p className="section-heading__copy">{description}</p> : null}
+      {description ? (
+        <p className="section-heading__copy">{description}</p>
+      ) : null}
     </div>
   );
 }

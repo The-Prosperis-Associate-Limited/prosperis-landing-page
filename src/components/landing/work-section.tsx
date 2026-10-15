@@ -82,7 +82,10 @@ export function WorkSection() {
 
           <div className="gallery-grid">
             <Reveal className="gallery-card gallery-card--large">
-              <div className="gallery-art gallery-art--workshop" aria-hidden="true">
+              <div
+                className="gallery-art gallery-art--workshop"
+                aria-hidden="true"
+              >
                 <span className="workshop-table" />
                 <span className="workshop-note note-a" />
                 <span className="workshop-note note-b" />
@@ -100,7 +103,10 @@ export function WorkSection() {
             </Reveal>
 
             <Reveal className="gallery-card gallery-card--video" delay={0.08}>
-              <div className="gallery-art gallery-art--street" aria-hidden="true">
+              <div
+                className="gallery-art gallery-art--street"
+                aria-hidden="true"
+              >
                 <span className="street-sun" />
                 <span className="street-road" />
                 <span className="street-car" />

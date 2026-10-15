@@ -876,7 +876,13 @@ button {
 }
 
 .partner-marquee {
-  mask-image: linear-gradient(to right, transparent, black 9%, black 91%, transparent);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 9%,
+    black 91%,
+    transparent
+  );
   overflow: hidden;
 }
 
@@ -1255,7 +1261,11 @@ button {
 
 .product-spotlight__visual {
   background:
-    radial-gradient(circle at 50% 40%, rgba(242, 255, 136, 0.36), transparent 38%),
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(242, 255, 136, 0.36),
+      transparent 38%
+    ),
     linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent);
   overflow: hidden;
   position: relative;
@@ -1518,7 +1528,11 @@ button {
 
 .case-art--route {
   background:
-    radial-gradient(circle at 70% 30%, rgba(242, 255, 136, 0.35), transparent 28%),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(242, 255, 136, 0.35),
+      transparent 28%
+    ),
     linear-gradient(145deg, transparent, rgba(5, 38, 95, 0.3));
 }
 
@@ -2019,7 +2033,11 @@ button {
 }
 
 .voices::before {
-  background: radial-gradient(circle, rgba(47, 107, 246, 0.12), transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(47, 107, 246, 0.12),
+    transparent 70%
+  );
   border-radius: 50%;
   content: "";
   height: 620px;

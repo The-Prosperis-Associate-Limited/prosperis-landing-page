@@ -33,7 +33,10 @@ export function AboutSection() {
         <div className="shell">
           <div className="about__intro">
             <Reveal>
-              <SectionHeading eyebrow="Our story" title="Progress, made practical." />
+              <SectionHeading
+                eyebrow="Our story"
+                title="Progress, made practical."
+              />
             </Reveal>
             <Reveal delay={0.1}>
               <div className="about__statement">
@@ -92,8 +95,8 @@ export function AboutSection() {
                   <h3>Many perspectives. One standard.</h3>
                 </div>
                 <p>
-                  A sample leadership team combining experience across
-                  strategy, technology, mobility, and partnerships.
+                  A sample leadership team combining experience across strategy,
+                  technology, mobility, and partnerships.
                 </p>
               </div>
             </Reveal>
@@ -101,7 +104,9 @@ export function AboutSection() {
               {team.map((member, index) => (
                 <Reveal key={member.name} delay={index * 0.06}>
                   <article className="team-card">
-                    <div className={`team-card__portrait portrait-${index + 1}`}>
+                    <div
+                      className={`team-card__portrait portrait-${index + 1}`}
+                    >
                       <span>{member.initials}</span>
                     </div>
                     <div>

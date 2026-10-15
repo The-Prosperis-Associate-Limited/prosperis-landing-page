@@ -24,9 +24,15 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
+    <header
+      className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}
+    >
       <div className="site-header__inner shell">
-        <a href="#top" aria-label="Prosperis home" onClick={() => setMenuOpen(false)}>
+        <a
+          href="#top"
+          aria-label="Prosperis home"
+          onClick={() => setMenuOpen(false)}
+        >
           <BrandMark inverse />
         </a>
 
