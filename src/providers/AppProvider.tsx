@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "@/store/useAuthStore";
+import Cookies from "js-cookie";
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(
@@ -21,7 +22,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const refreshUser = useAuthStore((state) => state.refreshUser);
 
   useEffect(() => {
-    refreshUser();
+    if (Cookies.get("access_token")) {
+      refreshUser();
+    }
   }, [refreshUser]);
 
   return (
