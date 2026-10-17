@@ -1,5 +1,4 @@
 from pathlib import Path
-import shutil
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
@@ -13,7 +12,6 @@ from reportlab.pdfgen import canvas
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "output" / "pdf" / "prosperis-company-profile.pdf"
-PUBLIC_COPY = ROOT / "public" / "prosperis-company-profile.pdf"
 
 PAGE_W, PAGE_H = A4
 BLUE = colors.HexColor("#2F6BF6")
@@ -363,7 +361,6 @@ def page_six(c):
 
 def build():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    PUBLIC_COPY.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1)
     c.setTitle("Prosperis Group - Company Profile")
     c.setAuthor("Prosperis Group")
@@ -372,7 +369,6 @@ def build():
         page(c)
         c.showPage()
     c.save()
-    shutil.copyfile(OUTPUT, PUBLIC_COPY)
 
 
 if __name__ == "__main__":

@@ -1,27 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { AppProvider } from "@/providers/AppProvider";
 import "./globals.css";
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://prosperis.example";
+const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+const siteUrl = configuredSiteUrl ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Prosperis Group | Built for the roads ahead",
+    default: "Prosperis Group | Company overview",
     template: "%s | Prosperis Group",
   },
   description:
-    "Prosperis Group builds useful businesses, digital products, and mobility services for organizations ready to move forward.",
+    "An introduction to Prosperis Group, its current service areas, and its portfolio.",
   keywords: [
     "Prosperis Group",
-    "business strategy",
-    "digital products",
-    "mobility services",
-    "Haya Drivers",
-    "Lagos",
-    "Nigeria",
+    "company overview",
+    "business services",
+    "portfolio",
   ],
   authors: [{ name: "Prosperis Group" }],
   creator: "Prosperis Group",
@@ -33,31 +28,31 @@ export const metadata: Metadata = {
     locale: "en_NG",
     url: "/",
     siteName: "Prosperis Group",
-    title: "Prosperis Group | Built for the roads ahead",
+    title: "Prosperis Group | Company overview",
     description:
-      "Ideas, products, and partnerships built to move people and businesses forward.",
+      "An introduction to Prosperis Group, its current service areas, and its portfolio.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Prosperis Group - Built for the roads ahead",
+        alt: "Prosperis Group company overview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prosperis Group | Built for the roads ahead",
+    title: "Prosperis Group | Company overview",
     description:
-      "Ideas, products, and partnerships built to move people and businesses forward.",
+      "An introduction to Prosperis Group, its current service areas, and its portfolio.",
     images: ["/opengraph-image"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: Boolean(configuredSiteUrl),
+    follow: Boolean(configuredSiteUrl),
     googleBot: {
-      index: true,
-      follow: true,
+      index: Boolean(configuredSiteUrl),
+      follow: Boolean(configuredSiteUrl),
       "max-image-preview": "large",
       "max-snippet": -1,
       "max-video-preview": -1,
@@ -79,9 +74,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <AppProvider>{children}</AppProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

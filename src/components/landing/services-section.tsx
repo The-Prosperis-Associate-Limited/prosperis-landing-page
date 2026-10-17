@@ -11,9 +11,9 @@ export function ServicesSection() {
       <div className="shell">
         <Reveal>
           <SectionHeading
-            eyebrow="What we do"
-            title="One partner. Three connected disciplines."
-            description="We move from the boardroom to the interface to the frontline, keeping the original purpose intact at every step."
+            eyebrow="Services"
+            title="The current service story, clearly framed."
+            description="Each card below shows the subject the final copy needs to cover and the exact detail that still requires approval."
             theme="dark"
           />
         </Reveal>
@@ -25,7 +25,7 @@ export function ServicesSection() {
               <Reveal key={service.title} delay={index * 0.08}>
                 <article className="service-card">
                   <div className="service-card__top">
-                    <span>{service.number}</span>
+                    <span>{service.number} · Working service area</span>
                     <Icon aria-hidden="true" />
                   </div>
                   <h3>{service.title}</h3>
@@ -35,8 +35,9 @@ export function ServicesSection() {
                       <li key={tag}>{tag}</li>
                     ))}
                   </ul>
-                  <a href="#contact" aria-label={`Discuss ${service.title}`}>
-                    Discuss a project <ArrowRight size={17} />
+                  <p className="service-card__note">{service.note}</p>
+                  <a href="#contact" aria-label={`Confirm ${service.title}`}>
+                    Confirm this service <ArrowRight size={17} />
                   </a>
                 </article>
               </Reveal>
@@ -45,15 +46,17 @@ export function ServicesSection() {
         </div>
 
         <Reveal className="product-spotlight" delay={0.12}>
+          <span id="portfolio" className="anchor-target" />
           <div className="product-spotlight__copy">
             <p className="eyebrow eyebrow--lime">
-              <span /> Featured product
+              <span /> Portfolio item in this draft
             </p>
             <h3>Haya Drivers</h3>
             <p>
-              A dedicated home for the mobility side of our ecosystem. Explore
-              the live Haya Drivers website and see the product in its own
-              context.
+              Haya Drivers is included here as a mobility business associated
+              with Prosperis. Before launch, confirm the formal relationship and
+              approve a one-sentence description of what Haya offers. Its own
+              website should remain the source for detailed service information.
             </p>
             <a
               className="button button--lime"
@@ -87,9 +90,11 @@ export function ServicesSection() {
                 <span className="phone-card__button">Continue</span>
               </div>
             </div>
-            <div className="product-badge product-badge--one">MOVE BETTER</div>
+            <div className="product-badge product-badge--one">
+              RELATIONSHIP TO CONFIRM
+            </div>
             <div className="product-badge product-badge--two">
-              BUILT FOR PEOPLE
+              APPROVED COPY NEEDED
             </div>
           </div>
         </Reveal>

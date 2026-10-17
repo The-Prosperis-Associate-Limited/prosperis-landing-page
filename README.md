@@ -1,36 +1,43 @@
-# Next.js Production Scaffolding
+# Prosperis Group Landing Page
 
-A minimal, high-performance starter focused on core architecture and developer experience.
+A focused public landing page introducing Prosperis Group, its service areas,
+and its portfolio. The current wording is a content-review draft: it avoids
+invented company claims and makes every outstanding approval explicit.
 
 ## Tech Stack
 
-- **Framework**: Next.js 16/19, TypeScript
-- **Query / API**: [TanStack Query v5](https://tanstack.com/query), [Axios](https://axios-http.com/)
-- **State**: [Zustand](https://zustand.dev/), [JS-Cookie](https://github.com/js-cookie/js-cookie)
-- **Forms / Validation**: [React Hook Form](https://react-hook-form.com/), [Zod](https://zod.dev/)
-- **UI Architecture**: [Tailwind 4](https://tailwindcss.com/), [Shadcn UI](https://ui.shadcn.com/), [Motion](https://motion.dev/)
-- **Icons**: [HugeIcons](https://hugeicons.com/), [Lucide](https://lucide.dev/)
+- **Framework**: Next.js 16, React 19, TypeScript
+- **UI**: Tailwind CSS 4 and project CSS
+- **Motion**: Framer Motion
+- **Icons**: Lucide
 - **DX**: [Husky](https://typicode.github.io/husky/), [Prettier](https://prettier.io/), [ESLint](https://eslint.org/)
 
 ## Setup
 
 ```bash
 npm install
-cp .env.example .env.local
 npm run dev
 ```
 
+Set `NEXT_PUBLIC_SITE_URL` for production metadata, the sitemap, and search
+indexing. Without it, the preview intentionally serves a `noindex` robots rule.
+
 ## Core Structure
 
-- `src/app/`: App router with `(auth)` and `(dashboard)` route groups.
-- `src/components/`: Shadcn primitives (`ui`) and app-wide wrappers (`shared`).
-- `src/lib/api/`: Axios instance with interceptors and TanStack Query client helpers.
-- `src/hooks/`: Business logic hooks (e.g., `useMarketData`, `useUser`).
-- `src/store/`: Zustand global state definitions.
-- `src/services/`: Direct API service abstractions.
+- `src/app/`: the public `/` route and its metadata files.
+- `src/components/landing/`: all landing-page sections and interactions.
+- `src/components/landing/data.ts`: review copy and navigation data.
+
+The project intentionally has no authentication, dashboard, API client, or
+application state layer. Those are outside the scope of a company landing page.
+
+The draft company-profile PDF is retained in `output/pdf/` for internal review
+and is intentionally not copied into `public/` until its content is approved.
 
 ## Scripts
 
 - `dev`: Start development server.
 - `lint`: Run ESLint check.
+- `type-check`: Run TypeScript without emitting files.
+- `build`: Create the production Next.js build.
 - `format`: Format code with Prettier.

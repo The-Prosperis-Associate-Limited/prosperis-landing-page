@@ -1,150 +1,60 @@
 export const navigation = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Insights", href: "#insights" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const services = [
   {
     number: "01",
-    title: "Strategy & growth",
+    title: "Business strategy & growth",
     description:
-      "Clear direction for organizations navigating new markets, operating models, and moments of change.",
-    tags: ["Research", "Positioning", "Go-to-market"],
+      "This area should explain how Prosperis supports business direction, growth, and operational decision-making.",
+    note: "Confirm whether this is offered to external clients, used within the group, or both.",
+    tags: ["Offering", "Audience", "Scope"],
   },
   {
     number: "02",
-    title: "Digital products",
+    title: "Digital products & technology",
     description:
-      "Useful, human digital experiences shaped from first idea through launch and continuous improvement.",
-    tags: ["Product design", "Engineering", "Experience"],
+      "This area should describe the digital products or technology services connected to Prosperis and the problems they solve.",
+    note: "Confirm the named solutions, the sectors they serve, and the delivery model.",
+    tags: ["Solutions", "Customers", "Delivery"],
   },
   {
     number: "03",
     title: "Mobility services",
     description:
-      "Practical systems and partnerships that help people, teams, and goods move with more confidence.",
-    tags: ["Operations", "Driver networks", "Fleet support"],
+      "This area should introduce Prosperis' mobility interests and direct visitors to the appropriate business or service.",
+    note: "Confirm the approved service description and the relationship to Haya Drivers.",
+    tags: ["Services", "Coverage", "Portfolio link"],
   },
 ] as const;
 
-export const caseStudies = [
+export const contentReviewItems = [
   {
-    index: "01",
-    eyebrow: "Mobility / Product ecosystem",
-    title: "A clearer path from request to arrival",
+    number: "01",
+    title: "Official company story",
     description:
-      "An illustrative service concept bringing booking, communication, and support into one calm experience.",
-    result: "Sample case study",
-    className: "case-study--blue",
+      "Approve one concise description of Prosperis, its history, purpose, and the people or organisations it serves.",
   },
   {
-    index: "02",
-    eyebrow: "Operations / Growth",
-    title: "Turning a complex service into a repeatable system",
+    number: "02",
+    title: "Services and capabilities",
     description:
-      "A demonstration of how service design can align frontline teams, partners, and customer expectations.",
-    result: "Sample case study",
-    className: "case-study--sand",
+      "Confirm the final service names, what each service includes, who it is for, and the right enquiry path.",
   },
   {
-    index: "03",
-    eyebrow: "Brand / Digital",
-    title: "Building trust before the first conversation",
+    number: "03",
+    title: "Portfolio relationships",
     description:
-      "A placeholder identity and web programme designed around clarity, proof, and an easy next step.",
-    result: "Sample case study",
-    className: "case-study--ink",
-  },
-] as const;
-
-export const team = [
-  { initials: "AO", name: "Ada Okorie", role: "Group Strategy" },
-  { initials: "TM", name: "Tobi Mensah", role: "Product & Technology" },
-  { initials: "ZI", name: "Zara Ibrahim", role: "Mobility Operations" },
-  { initials: "CN", name: "Chidi Nwosu", role: "Partnerships" },
-] as const;
-
-export const testimonials = [
-  {
-    quote:
-      "Prosperis helped us replace a maze of ideas with one clear direction our whole team could act on.",
-    name: "Amara Bello",
-    role: "COO, Northstar Collective",
+      "Confirm which companies or brands should appear and the exact language that describes each relationship.",
   },
   {
-    quote:
-      "They brought uncommon calm to a complex challenge and kept every decision connected to the people we serve.",
-    name: "David Osei",
-    role: "Founder, Common Ground",
+    number: "04",
+    title: "Contacts and compliance",
+    description:
+      "Provide the public email, phone, office details, form destination, and approved privacy or legal wording.",
   },
-  {
-    quote:
-      "The work felt considered from strategy to the smallest interaction. Nothing was there just for show.",
-    name: "Lina Adeyemi",
-    role: "Director, Lumen House",
-  },
-] as const;
-
-export const faqs = [
-  {
-    question: "What does Prosperis Group do?",
-    answer:
-      "Prosperis is presented here as a multi-disciplinary organization working across strategy, digital products, and mobility services. This starter copy can be replaced with your final company description.",
-  },
-  {
-    question: "Do you work with organizations of every size?",
-    answer:
-      "Yes. The example service model is designed to support focused projects, longer partnerships, and venture-building programmes for growing teams and established organizations.",
-  },
-  {
-    question: "Is Haya Drivers part of Prosperis?",
-    answer:
-      "Haya Drivers is featured as a product in the Prosperis portfolio for this draft. The final relationship, service description, and legal language should be confirmed before launch.",
-  },
-  {
-    question: "Where is the team based?",
-    answer:
-      "The placeholder contact details position the team in Lagos, Nigeria, with work across Africa. Replace this with your confirmed office and operating locations.",
-  },
-  {
-    question: "How do we start a conversation?",
-    answer:
-      "Use the contact form, email, phone, or WhatsApp link below. The current form is a front-end demo and can be connected to your preferred inbox or CRM next.",
-  },
-] as const;
-
-export const posts = [
-  {
-    date: "08 OCT 2026",
-    category: "Field note",
-    title: "Why useful businesses begin with sharper questions",
-    summary:
-      "A practical framework for finding the real problem before choosing the visible solution.",
-  },
-  {
-    date: "24 SEP 2026",
-    category: "Perspective",
-    title: "Trust is an operating system, not a campaign",
-    summary:
-      "What service teams can do to make reliability visible at every stage of the customer journey.",
-  },
-  {
-    date: "11 SEP 2026",
-    category: "News",
-    title: "Introducing the next chapter of our mobility work",
-    summary:
-      "A sample newsroom story for product updates, partnerships, and organization milestones.",
-  },
-] as const;
-
-export const partnerNames = [
-  "NORTHSTAR",
-  "LUMEN",
-  "COMMON GROUND",
-  "KINSHIP",
-  "ARC WORKS",
-  "NOMAD",
 ] as const;

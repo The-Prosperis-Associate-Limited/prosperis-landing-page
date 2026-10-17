@@ -10,10 +10,10 @@ export function ContactForm() {
     return (
       <div className="form-success" role="status">
         <CheckCircle2 aria-hidden="true" />
-        <h3>Thanks for reaching out.</h3>
+        <h3>Preview submission complete.</h3>
         <p>
-          This demo has captured the interaction. Connect the form to your inbox
-          or CRM to receive live enquiries.
+          No message was sent. Connect this form to the approved Prosperis inbox
+          or CRM before the website is published.
         </p>
         <button type="button" onClick={() => setSubmitted(false)}>
           Send another message
@@ -30,6 +30,14 @@ export function ContactForm() {
         setSubmitted(true);
       }}
     >
+      <div className="contact-form__intro">
+        <p>Enquiry form</p>
+        <h3>Tell the team what you need.</h3>
+        <span>
+          The fields below are ready for review; submission delivery is not yet
+          connected.
+        </span>
+      </div>
       <div className="field-row">
         <label>
           <span>Name</span>
@@ -54,13 +62,14 @@ export function ContactForm() {
           <span>What can we help with?</span>
           <select name="interest" defaultValue="" required>
             <option value="" disabled>
-              Choose a service
+              Choose an enquiry type
             </option>
-            <option>Strategy & growth</option>
-            <option>Digital products</option>
-            <option>Mobility services</option>
-            <option>Partnership opportunity</option>
-            <option>Something else</option>
+            <option>Company information</option>
+            <option>Business strategy & growth</option>
+            <option>Digital products & technology</option>
+            <option>Mobility services or Haya Drivers</option>
+            <option>Partnership or media enquiry</option>
+            <option>General enquiry</option>
           </select>
         </label>
       </div>
@@ -68,18 +77,18 @@ export function ContactForm() {
         <span>Tell us a little about it</span>
         <textarea
           name="message"
-          placeholder="What are you trying to make possible?"
+          placeholder="Tell us what you would like to know about Prosperis, a service area, or a portfolio business."
           rows={5}
           required
         />
       </label>
       <div className="contact-form__footer">
         <p>
-          By sending this form, you agree to our{" "}
-          <a href="#privacy">privacy notice</a>.
+          Preview only. The form is not connected to an inbox and does not send
+          or store this information.
         </p>
         <button className="button button--lime" type="submit">
-          Send enquiry <ArrowRight size={18} aria-hidden="true" />
+          Submit preview enquiry <ArrowRight size={18} aria-hidden="true" />
         </button>
       </div>
     </form>

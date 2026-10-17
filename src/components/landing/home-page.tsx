@@ -1,13 +1,10 @@
 import { AboutSection } from "./about-section";
 import { ContactSection } from "./contact-section";
-import { CookieNotice } from "./cookie-notice";
 import { Hero } from "./hero";
-import { InsightsSection } from "./insights-section";
+import { ReviewSection } from "./review-section";
 import { ServicesSection } from "./services-section";
 import { SiteFooter } from "./site-footer";
 import { SiteHeader } from "./site-header";
-import { VoicesSection } from "./voices-section";
-import { WorkSection } from "./work-section";
 
 export function HomePage() {
   return (
@@ -17,13 +14,10 @@ export function HomePage() {
         <Hero />
         <AboutSection />
         <ServicesSection />
-        <WorkSection />
-        <VoicesSection />
-        <InsightsSection />
+        <ReviewSection />
         <ContactSection />
       </main>
       <SiteFooter />
-      <CookieNotice />
     </>
   );
 }

@@ -1,11 +1,4 @@
-import {
-  ArrowDownToLine,
-  Clock3,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Phone,
-} from "lucide-react";
+import { Building2, CircleHelp, Handshake, Layers3 } from "lucide-react";
 import { ContactForm } from "./contact-form";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
@@ -16,74 +9,43 @@ export function ContactSection() {
       <div className="shell">
         <Reveal>
           <SectionHeading
-            eyebrow="Start a conversation"
-            title="What should we build next?"
-            description="Tell us what you are working toward. We will bring the questions, perspective, and practical next steps."
+            eyebrow="Contact"
+            title="How can we help?"
+            description="Use this section for company information, service enquiries, portfolio questions, partnerships, or general contact."
             theme="dark"
           />
         </Reveal>
 
         <div className="contact__grid">
           <Reveal className="contact__aside" delay={0.05}>
-            <div className="contact-methods">
-              <a href="mailto:hello@prosperis.example">
-                <Mail aria-hidden="true" />
-                <span>
-                  <small>Email</small>
-                  hello@prosperis.example
-                </span>
-              </a>
-              <a href="tel:+2348000000000">
-                <Phone aria-hidden="true" />
-                <span>
-                  <small>Phone</small>
-                  +234 800 000 0000
-                </span>
-              </a>
-              <a
-                href="https://wa.me/2348000000000"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <MessageCircle aria-hidden="true" />
-                <span>
-                  <small>WhatsApp</small>
-                  Chat with our team
-                </span>
-              </a>
+            <div className="contact-guide">
+              <p className="eyebrow eyebrow--lime">
+                <span /> Enquiry guide
+              </p>
+              <h3>What this form is for</h3>
+              <ul>
+                <li>
+                  <Building2 aria-hidden="true" /> Company information
+                </li>
+                <li>
+                  <CircleHelp aria-hidden="true" /> Service enquiries
+                </li>
+                <li>
+                  <Layers3 aria-hidden="true" /> Portfolio and Haya questions
+                </li>
+                <li>
+                  <Handshake aria-hidden="true" /> Partnerships and media
+                </li>
+              </ul>
             </div>
 
-            <a
-              className="brochure-card"
-              href="/prosperis-company-profile.pdf"
-              download
-            >
-              <ArrowDownToLine aria-hidden="true" />
-              <span>
-                <strong>Company profile</strong>
-                <small>Download the overview · PDF</small>
-              </span>
-            </a>
-
-            <div className="office-card">
-              <div className="office-map" aria-hidden="true">
-                <span className="office-road office-road--a" />
-                <span className="office-road office-road--b" />
-                <span className="office-road office-road--c" />
-                <span className="office-water" />
-                <span className="office-pin">
-                  <MapPin />
-                </span>
-              </div>
-              <div className="office-card__copy">
-                <p>
-                  <MapPin size={16} aria-hidden="true" /> Lagos, Nigeria
-                </p>
-                <p>
-                  <Clock3 size={16} aria-hidden="true" /> Mon–Fri, 9am–5pm WAT
-                </p>
-                <small>Placeholder office location</small>
-              </div>
+            <div className="contact-status">
+              <strong>Before public launch</strong>
+              <p>
+                Add the confirmed company inbox, telephone number, office
+                address, form destination, and approved privacy notice. The
+                draft no longer presents invented contact details as real.
+              </p>
             </div>
           </Reveal>
 

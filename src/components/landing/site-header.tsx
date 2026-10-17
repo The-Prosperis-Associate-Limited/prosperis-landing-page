@@ -79,7 +79,7 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <p>Ideas, products, and partnerships built for the roads ahead.</p>
+        <p>A clear introduction to the company, its services, and portfolio.</p>
       </div>
     </header>
   );

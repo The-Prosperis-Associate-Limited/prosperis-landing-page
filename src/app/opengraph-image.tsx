@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Prosperis Group - Built for the roads ahead";
+export const alt = "Prosperis Group company overview";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -83,7 +83,7 @@ export default function OpenGraphImage() {
               maxWidth: 800,
             }}
           >
-            Built for the roads ahead.
+            Prosperis, at a glance.
           </div>
           <div
             style={{
@@ -93,7 +93,7 @@ export default function OpenGraphImage() {
               marginTop: 28,
             }}
           >
-            Strategy · Digital products · Mobility
+            Company · Services · Portfolio
           </div>
         </div>
       </div>

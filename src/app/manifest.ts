@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Prosperis Group",
     short_name: "Prosperis",
     description:
-      "Ideas, products, and partnerships built to move people and businesses forward.",
+      "Prosperis Group company overview, service areas, and portfolio.",
     start_url: "/",
     display: "standalone",
     background_color: "#f5f4ef",
