@@ -2,6 +2,7 @@ export const navigation = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
+  { label: "Partners", href: "#partners" },
   { label: "Contact", href: "#contact" },
 ] as const;
 

@@ -44,10 +44,16 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <a className="header-cta" href="#contact">
+        <button
+          type="button"
+          className="header-cta"
+          onClick={() =>
+            window.dispatchEvent(new CustomEvent("prosperis:open-chat"))
+          }
+        >
           Let&apos;s talk
           <ArrowUpRight size={16} aria-hidden="true" />
-        </a>
+        </button>
 
         <button
           type="button"
