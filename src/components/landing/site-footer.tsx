@@ -1,4 +1,4 @@
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Facebook, Instagram, Twitter } from "lucide-react";
 import { BrandMark } from "./brand-mark";
 import { navigation } from "./data";
 
@@ -13,6 +13,32 @@ export function SiteFooter() {
               A concise introduction to Prosperis Group, its services, and its
               portfolio.
             </p>
+            <div className="social-links" aria-label="Social media">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+              >
+                <Facebook aria-hidden="true" />
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Twitter"
+              >
+                <Twitter aria-hidden="true" />
+              </a>
+            </div>
           </div>
 
           <nav aria-label="Footer navigation">
