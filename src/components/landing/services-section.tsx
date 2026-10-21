@@ -42,7 +42,10 @@ export function ServicesSection() {
                       <li key={tag}>{tag}</li>
                     ))}
                   </ul>
-                  <a href="#contact" aria-label={`Enquire about ${service.title}`}>
+                  <a
+                    href="#contact"
+                    aria-label={`Enquire about ${service.title}`}
+                  >
                     Discuss this service <ArrowRight size={17} />
                   </a>
                 </article>
