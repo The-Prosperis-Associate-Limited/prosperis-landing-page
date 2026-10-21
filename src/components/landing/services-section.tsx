@@ -1,9 +1,16 @@
-import { ArrowRight, Blocks, Compass, ExternalLink, Route } from "lucide-react";
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Code2,
+  ExternalLink,
+  GraduationCap,
+  UserSearch,
+} from "lucide-react";
 import { services } from "./data";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 
-const icons = [Compass, Blocks, Route] as const;
+const icons = [GraduationCap, UserSearch, Code2, BriefcaseBusiness] as const;
 
 export function ServicesSection() {
   return (
@@ -12,8 +19,8 @@ export function ServicesSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Services"
-            title="The current service story, clearly framed."
-            description="Each card below shows the subject the final copy needs to cover and the exact detail that still requires approval."
+            title="Practical expertise for stronger organisations."
+            description="From people and performance to technology and strategy, Prosperis helps organisations build capability, hire well, and move forward with confidence."
             theme="dark"
           />
         </Reveal>
@@ -25,7 +32,7 @@ export function ServicesSection() {
               <Reveal key={service.title} delay={index * 0.08}>
                 <article className="service-card">
                   <div className="service-card__top">
-                    <span>{service.number} · Working service area</span>
+                    <span>{service.number} · Service</span>
                     <Icon aria-hidden="true" />
                   </div>
                   <h3>{service.title}</h3>
@@ -35,9 +42,8 @@ export function ServicesSection() {
                       <li key={tag}>{tag}</li>
                     ))}
                   </ul>
-                  <p className="service-card__note">{service.note}</p>
-                  <a href="#contact" aria-label={`Confirm ${service.title}`}>
-                    Confirm this service <ArrowRight size={17} />
+                  <a href="#contact" aria-label={`Enquire about ${service.title}`}>
+                    Discuss this service <ArrowRight size={17} />
                   </a>
                 </article>
               </Reveal>

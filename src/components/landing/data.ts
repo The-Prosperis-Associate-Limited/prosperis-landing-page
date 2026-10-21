@@ -9,27 +9,31 @@ export const navigation = [
 export const services = [
   {
     number: "01",
-    title: "Business strategy & growth",
+    title: "Training & development",
     description:
-      "This area should explain how Prosperis supports business direction, growth, and operational decision-making.",
-    note: "Confirm whether this is offered to external clients, used within the group, or both.",
-    tags: ["Offering", "Audience", "Scope"],
+      "Build capable, confident teams through practical learning designed around everyday business needs—from customer service and sales to HR, marketing, and more.",
+    tags: ["Customer service", "Sales", "HR", "Marketing"],
   },
   {
     number: "02",
-    title: "Digital products & technology",
+    title: "Recruitment",
     description:
-      "This area should describe the digital products or technology services connected to Prosperis and the problems they solve.",
-    note: "Confirm the named solutions, the sectors they serve, and the delivery model.",
-    tags: ["Solutions", "Customers", "Delivery"],
+      "Find the right people for every opportunity with focused recruitment support that brings business needs and strong candidates together.",
+    tags: ["Talent sourcing", "Candidate screening", "Hiring support"],
   },
   {
     number: "03",
-    title: "Mobility services",
+    title: "IT development & deployment",
     description:
-      "This area should introduce Prosperis' mobility interests and direct visitors to the appropriate business or service.",
-    note: "Confirm the approved service description and the relationship to Haya Drivers.",
-    tags: ["Services", "Coverage", "Portfolio link"],
+      "Turn business requirements into dependable digital solutions, with support from planning and development through implementation and deployment.",
+    tags: ["Solution planning", "Development", "Deployment"],
+  },
+  {
+    number: "04",
+    title: "Consulting",
+    description:
+      "Move forward with clear, practical guidance shaped around your goals, operating realities, and opportunities for meaningful growth.",
+    tags: ["Business advisory", "Operations", "Growth"],
   },
 ] as const;
 
@@ -42,9 +46,9 @@ export const contentReviewItems = [
   },
   {
     number: "02",
-    title: "Services and capabilities",
+    title: "Service delivery details",
     description:
-      "Confirm the final service names, what each service includes, who it is for, and the right enquiry path.",
+      "Confirm the audience, delivery format, locations, timelines, and enquiry path for each approved service.",
   },
   {
     number: "03",
