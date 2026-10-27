@@ -1,4 +1,4 @@
-import { Building2, CircleHelp, Handshake, Layers3 } from "lucide-react";
+import { Clock3, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "./contact-form";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
@@ -9,9 +9,9 @@ export function ContactSection() {
       <div className="shell">
         <Reveal>
           <SectionHeading
-            eyebrow="Contact"
-            title="How can we help?"
-            description="Use this section for company information, service enquiries, portfolio questions, partnerships, or general contact."
+            eyebrow="Contact Us"
+            title="Let’s Talk About What You Want to Build."
+            description="Whether you have a clear project brief or are still exploring an idea, we’d like to hear from you. Tell us about your business, the challenge you want to solve and the outcome you hope to achieve."
             theme="dark"
           />
         </Reveal>
@@ -20,31 +20,47 @@ export function ContactSection() {
           <Reveal className="contact__aside" delay={0.05}>
             <div className="contact-guide">
               <p className="eyebrow eyebrow--lime">
-                <span /> Enquiry guide
+                <span /> Other ways to connect
               </p>
-              <h3>What this form is for</h3>
-              <ul>
-                <li>
-                  <Building2 aria-hidden="true" /> Company information
-                </li>
-                <li>
-                  <CircleHelp aria-hidden="true" /> Service enquiries
-                </li>
-                <li>
-                  <Layers3 aria-hidden="true" /> Portfolio and Haya questions
-                </li>
-                <li>
-                  <Handshake aria-hidden="true" /> Partnerships and media
-                </li>
-              </ul>
+              <h3>Speak with the Prosperis team.</h3>
+              <div className="contact-methods">
+                <a href="tel:+2348065415059">
+                  <Phone aria-hidden="true" />
+                  <span>
+                    <small>Phone / WhatsApp</small>
+                    0806 541 5059
+                  </span>
+                </a>
+                <a href="tel:+2348033199000">
+                  <MessageCircle aria-hidden="true" />
+                  <span>
+                    <small>Phone / WhatsApp</small>
+                    0803 319 9000
+                  </span>
+                </a>
+                <div className="contact-method">
+                  <MapPin aria-hidden="true" />
+                  <span>
+                    <small>Office address</small>7 Jibowu, Yaba, Lagos State,
+                    Nigeria
+                  </span>
+                </div>
+                <div className="contact-method">
+                  <Clock3 aria-hidden="true" />
+                  <span>
+                    <small>Business hours</small>
+                    9am – 5pm
+                  </span>
+                </div>
+              </div>
             </div>
 
             <div className="contact-status">
-              <strong>Before public launch</strong>
+              <strong>What happens next?</strong>
               <p>
-                Add the confirmed company inbox, telephone number, office
-                address, form destination, and approved privacy notice. The
-                draft no longer presents invented contact details as real.
+                Once we receive your enquiry, we will review your requirements
+                and contact you using the details provided, subject to our
+                response process.
               </p>
             </div>
           </Reveal>

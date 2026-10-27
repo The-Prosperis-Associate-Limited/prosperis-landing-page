@@ -5,18 +5,27 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Prosperis Group",
+  name: "The Prosperis Associates Limited",
+  alternateName: "TPAL",
   description:
-    "Prosperis Group company overview, service areas, and portfolio.",
+    "The Prosperis Associates Limited partners with organisations to solve business challenges through technology, talent and learning.",
+  telephone: ["+2348065415059", "+2348033199000"],
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "7 Jibowu",
+    addressLocality: "Yaba",
+    addressRegion: "Lagos State",
+    addressCountry: "NG",
+  },
   ...(siteUrl ? { url: siteUrl } : {}),
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Prosperis Group",
+  name: "The Prosperis Associates Limited",
   description:
-    "An introduction to Prosperis Group, its current service areas, and its portfolio.",
+    "Technology, talent and learning solutions that help businesses perform and grow.",
   ...(siteUrl ? { url: siteUrl } : {}),
 };
 

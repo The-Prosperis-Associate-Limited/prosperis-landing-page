@@ -1,46 +1,46 @@
-import { ArrowRight, Handshake } from "lucide-react";
+import { ArrowRight, ClipboardCheck } from "lucide-react";
+import { processSteps } from "./data";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 
-const partnerSlots = ["01", "02", "03", "04"] as const;
-
 export function PartnersSection() {
   return (
-    <section className="section partners" id="partners">
+    <section className="section partners" id="approach">
       <div className="shell">
         <div className="partners__intro">
           <Reveal>
             <SectionHeading
-              eyebrow="Partners"
-              title="The right relationships belong in the story."
-              description="A dedicated space for the organisations that work with Prosperis. Approved partner names and logos can be added here without overstating relationships that are not yet public."
+              eyebrow="How We Work"
+              title="A clear path from challenge to solution."
+              description="Every engagement begins with a conversation about your objectives. We agree on scope, deliverables, timelines, responsibilities and costs before work begins."
             />
           </Reveal>
 
           <Reveal className="partners__action" delay={0.08}>
-            <Handshake aria-hidden="true" />
+            <ClipboardCheck aria-hidden="true" />
             <p>
-              Interested in working together? Tell the team what kind of
-              partnership you have in mind.
+              Not every business needs a complex system. Sometimes the right
+              solution is a simple website, a better workflow or an improvement
+              to an existing application.
             </p>
             <a className="text-link" href="#contact">
-              Discuss a partnership
+              Let&apos;s identify what you need
               <ArrowRight size={16} aria-hidden="true" />
             </a>
           </Reveal>
         </div>
 
-        <div className="partner-roster" aria-label="Partner roster preview">
-          {partnerSlots.map((slot, index) => (
-            <Reveal key={slot} delay={index * 0.05}>
-              <div className="partner-slot">
-                <span>{slot}</span>
+        <div className="partner-roster" aria-label="Our five-step process">
+          {processSteps.map((step, index) => (
+            <Reveal key={step.title} delay={index * 0.04}>
+              <article className="partner-slot">
+                <span>{step.number}</span>
                 <div className="partner-slot__mark" aria-hidden="true">
-                  P
+                  {step.number}
                 </div>
-                <strong>Partner name</strong>
-                <small>Logo and name to confirm</small>
-              </div>
+                <strong>{step.title}</strong>
+                <small>{step.description}</small>
+              </article>
             </Reveal>
           ))}
         </div>

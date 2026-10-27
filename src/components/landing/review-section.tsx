@@ -1,32 +1,33 @@
 import {
-  BriefcaseBusiness,
-  Building2,
-  ContactRound,
-  Network,
+  Handshake,
+  Lightbulb,
+  Target,
+  UsersRound,
+  Workflow,
 } from "lucide-react";
-import { contentReviewItems } from "./data";
+import { differentiators } from "./data";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 
-const icons = [Building2, BriefcaseBusiness, Network, ContactRound] as const;
+const icons = [Target, Lightbulb, UsersRound, Workflow, Handshake] as const;
 
 export function ReviewSection() {
   return (
-    <section className="section review-section" id="content-review">
+    <section className="section review-section" id="why-us">
       <div className="shell">
         <Reveal>
           <SectionHeading
-            eyebrow="Content review"
-            title="What needs to be confirmed next."
-            description="These are the specific decisions needed to turn this coherent preview into launch-ready company copy."
+            eyebrow="Why Prosperis"
+            title="Solutions shaped around your business."
+            description="We combine clear business thinking, practical innovation and close collaboration to deliver work that fits your operational realities."
           />
         </Reveal>
 
         <div className="review-grid">
-          {contentReviewItems.map((item, index) => {
+          {differentiators.map((item, index) => {
             const Icon = icons[index];
             return (
-              <Reveal key={item.title} delay={index * 0.06}>
+              <Reveal key={item.title} delay={(index % 2) * 0.06}>
                 <article className="review-card">
                   <div>
                     <span>{item.number}</span>
@@ -41,11 +42,10 @@ export function ReviewSection() {
         </div>
 
         <Reveal className="review-note" delay={0.1}>
-          <strong>Intentionally not shown yet</strong>
+          <strong>Our promise</strong>
           <p>
-            Leadership profiles, client logos, testimonials, case studies,
-            statistics, article dates, and awards should only appear after the
-            corresponding names, facts, quotes, and approvals are supplied.
+            We help organisations strengthen their systems, find the right
+            people and develop the capabilities they need to perform and grow.
           </p>
         </Reveal>
       </div>

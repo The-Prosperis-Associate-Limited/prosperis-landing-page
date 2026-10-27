@@ -1,8 +1,7 @@
-# Prosperis Group Landing Page
+# The Prosperis Associates Limited Landing Page
 
-A focused public landing page introducing Prosperis Group, its service areas,
-and its portfolio. The current wording is a content-review draft: it avoids
-invented company claims and makes every outstanding approval explicit.
+A focused public landing page for The Prosperis Associates Limited, covering
+its technology, recruitment, training, approach, portfolio, and contact details.
 
 ## Tech Stack
 
@@ -26,13 +25,13 @@ indexing. Without it, the preview intentionally serves a `noindex` robots rule.
 
 - `src/app/`: the public `/` route and its metadata files.
 - `src/components/landing/`: all landing-page sections and interactions.
-- `src/components/landing/data.ts`: review copy and navigation data.
+- `src/components/landing/data.ts`: company copy and navigation data.
 
 The project intentionally has no authentication, dashboard, API client, or
 application state layer. Those are outside the scope of a company landing page.
 
-The draft company-profile PDF is retained in `output/pdf/` for internal review
-and is intentionally not copied into `public/` until its content is approved.
+The company-profile PDF is retained in `output/pdf/` and is not exposed as a
+public download.
 
 ## Scripts
 

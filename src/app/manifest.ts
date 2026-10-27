@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Prosperis Group",
+    name: "The Prosperis Associates Limited",
     short_name: "Prosperis",
     description:
-      "Prosperis Group company overview, service areas, and portfolio.",
+      "Technology, talent and learning solutions that help businesses perform and grow.",
     start_url: "/",
     display: "standalone",
     background_color: "#f5f4ef",

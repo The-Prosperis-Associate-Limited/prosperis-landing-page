@@ -7,44 +7,45 @@ const siteUrl = configuredSiteUrl ?? "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Prosperis Group | Company overview",
-    template: "%s | Prosperis Group",
+    default: "The Prosperis Associates Limited | Technology, Talent & Learning",
+    template: "%s | The Prosperis Associates Limited",
   },
   description:
-    "An introduction to Prosperis Group, its current service areas, and its portfolio.",
+    "Prosperis helps businesses solve challenges through technology, talent and learning, from digital solutions to recruitment and workforce development.",
   keywords: [
-    "Prosperis Group",
-    "company overview",
-    "business services",
-    "portfolio",
+    "The Prosperis Associates Limited",
+    "technology solutions Nigeria",
+    "recruitment solutions",
+    "corporate training",
+    "software development Lagos",
   ],
-  authors: [{ name: "Prosperis Group" }],
-  creator: "Prosperis Group",
-  publisher: "Prosperis Group",
+  authors: [{ name: "The Prosperis Associates Limited" }],
+  creator: "The Prosperis Associates Limited",
+  publisher: "The Prosperis Associates Limited",
   alternates: { canonical: "/" },
   category: "Business",
   openGraph: {
     type: "website",
     locale: "en_NG",
     url: "/",
-    siteName: "Prosperis Group",
-    title: "Prosperis Group | Company overview",
+    siteName: "The Prosperis Associates Limited",
+    title: "The Right People. The Right Skills. The Right Solutions.",
     description:
-      "An introduction to Prosperis Group, its current service areas, and its portfolio.",
+      "Technology, talent and learning solutions that help businesses perform and grow.",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Prosperis Group company overview",
+        alt: "The Prosperis Associates Limited",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prosperis Group | Company overview",
+    title: "The Right People. The Right Skills. The Right Solutions.",
     description:
-      "An introduction to Prosperis Group, its current service areas, and its portfolio.",
+      "Technology, talent and learning solutions that help businesses perform and grow.",
     images: ["/opengraph-image"],
   },
   robots: {

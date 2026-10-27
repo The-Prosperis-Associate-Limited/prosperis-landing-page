@@ -1,5 +1,5 @@
 import { AboutSection } from "./about-section";
-import { ChatWidget } from "./chat-widget";
+// import { ChatWidget } from "./chat-widget";
 import { ContactSection } from "./contact-section";
 import { Hero } from "./hero";
 import { PartnersSection } from "./partners-section";
@@ -21,7 +21,7 @@ export function HomePage() {
         <ContactSection />
       </main>
       <SiteFooter />
-      <ChatWidget />
+      {/* <ChatWidget /> */}
     </>
   );
 }

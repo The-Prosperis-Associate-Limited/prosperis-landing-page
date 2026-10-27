@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { coreValues } from "./data";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
 
@@ -10,23 +11,24 @@ export function AboutSection() {
           <Reveal>
             <SectionHeading
               eyebrow="About Prosperis"
-              title="A group story visitors can understand."
+              title="Building stronger businesses through people and technology."
             />
           </Reveal>
           <Reveal delay={0.1}>
             <div className="about__statement">
               <p>
-                Prosperis brings its businesses, capabilities, and services
-                together under one group identity.
+                We help organisations strengthen their systems, find the right
+                people and develop the capabilities they need to perform and
+                grow.
               </p>
               <p>
-                The final company story should make clear what the group does,
-                who it serves, and how each part connects. This wording stays
-                deliberately broad until the official description, history, and
-                group structure are approved.
+                Every engagement begins with a conversation about your
+                objectives. We agree on the scope, deliverables, timelines,
+                responsibilities and costs before work begins, then focus on the
+                solution that best fits your business.
               </p>
-              <a className="text-link" href="#content-review">
-                See what still needs confirmation
+              <a className="text-link" href="#approach">
+                See how we work
                 <ArrowUpRight size={17} aria-hidden="true" />
               </a>
             </div>
@@ -36,29 +38,52 @@ export function AboutSection() {
         <Reveal className="principles" delay={0.1}>
           <article>
             <span>01</span>
-            <h3>Who is Prosperis?</h3>
+            <h3>Our Mission</h3>
             <p>
-              Replace the broad opening with the approved legal and commercial
-              description of the group.
+              To empower businesses through innovative technology, strategic
+              recruitment and impactful training that drive performance and
+              sustainable growth.
             </p>
           </article>
           <article>
             <span>02</span>
-            <h3>What does it do?</h3>
+            <h3>Our Vision</h3>
             <p>
-              Name the services and business activities in plain language,
-              including who each one is intended for.
+              To become a trusted partner in business growth, recognised for
+              connecting organisations with the right talent, developing
+              people’s capabilities and delivering technology solutions that
+              create lasting value.
             </p>
           </article>
           <article>
             <span>03</span>
-            <h3>How does it connect?</h3>
+            <h3>Our Promise</h3>
             <p>
-              Explain the relationship between the group, its portfolio
-              companies, and any customer-facing brands.
+              Practical solutions designed around real business needs, the
+              people who will use them and the value they should create.
             </p>
           </article>
         </Reveal>
+
+        <div className="values-block">
+          <Reveal className="values-block__heading">
+            <p className="eyebrow">
+              <span aria-hidden="true" /> Our Core Values
+            </p>
+            <h3>How we show up in every engagement.</h3>
+          </Reveal>
+          <div className="values-grid">
+            {coreValues.map((value, index) => (
+              <Reveal key={value.title} delay={index * 0.04}>
+                <article className="value-card">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <h4>{value.title}</h4>
+                  <p>{value.description}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

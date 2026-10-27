@@ -10,13 +10,13 @@ export function BrandMark({
   return (
     <span
       className={cn("brand-mark", inverse && "brand-mark--inverse", className)}
-      aria-label="Prosperis Group"
+      aria-label="The Prosperis Associates Limited"
     >
       <span className="brand-mark__symbol" aria-hidden="true">
         <span>P</span>
       </span>
       <span className="brand-mark__word">
-        PROSPERIS <small>GROUP</small>
+        PROSPERIS ASSOCIATES <small>LIMITED</small>
       </span>
     </span>
   );

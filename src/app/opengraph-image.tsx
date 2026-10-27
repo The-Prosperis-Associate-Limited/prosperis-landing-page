@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Prosperis Group company overview";
+export const alt = "The Prosperis Associates Limited";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -69,21 +69,21 @@ export default function OpenGraphImage() {
             P
           </div>
           <div style={{ display: "flex", fontSize: 34, fontWeight: 700 }}>
-            PROSPERIS
+            PROSPERIS ASSOCIATES
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
               display: "flex",
-              fontSize: 78,
+              fontSize: 64,
               fontWeight: 650,
               letterSpacing: "-4px",
               lineHeight: 1,
-              maxWidth: 800,
+              maxWidth: 850,
             }}
           >
-            Prosperis, at a glance.
+            The Right People. The Right Skills. The Right Solutions.
           </div>
           <div
             style={{
@@ -93,7 +93,7 @@ export default function OpenGraphImage() {
               marginTop: 28,
             }}
           >
-            Company · Services · Portfolio
+            Technology · Talent · Learning
           </div>
         </div>
       </div>

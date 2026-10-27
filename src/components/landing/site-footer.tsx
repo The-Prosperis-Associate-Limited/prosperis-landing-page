@@ -1,4 +1,4 @@
-import { ArrowUp, Facebook, Instagram, Twitter } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { BrandMark } from "./brand-mark";
 import { navigation } from "./data";
 
@@ -10,35 +10,9 @@ export function SiteFooter() {
           <div>
             <BrandMark inverse />
             <p>
-              A concise introduction to Prosperis Group, its services, and its
-              portfolio.
+              Technology that moves business forward through practical digital
+              solutions, strategic recruitment and impactful training.
             </p>
-            <div className="social-links" aria-label="Social media">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-              >
-                <Instagram aria-hidden="true" />
-              </a>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-              >
-                <Facebook aria-hidden="true" />
-              </a>
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Twitter"
-              >
-                <Twitter aria-hidden="true" />
-              </a>
-            </div>
           </div>
 
           <nav aria-label="Footer navigation">
@@ -51,17 +25,17 @@ export function SiteFooter() {
           </nav>
 
           <div className="site-footer__status">
-            <p>Content status</p>
-            <strong>Draft for review</strong>
-            <span>
-              Company facts, service details, contact information, and legal
-              copy still require approval before launch.
-            </span>
+            <p>Contact</p>
+            <strong>Let&apos;s discuss your project.</strong>
+            <a href="tel:+2348065415059">0806 541 5059</a>
+            <a href="tel:+2348033199000">0803 319 9000</a>
+            <span>7 Jibowu, Yaba, Lagos State, Nigeria</span>
+            <span>Business hours: 9am – 5pm</span>
           </div>
         </div>
 
         <div className="site-footer__bottom">
-          <p>© 2026 Prosperis Group. Content review website.</p>
+          <p>© 2026 The Prosperis Associates Limited.</p>
           <a href="#top" aria-label="Back to top">
             Back to top <ArrowUp size={15} aria-hidden="true" />
           </a>
