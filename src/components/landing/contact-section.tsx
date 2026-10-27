@@ -1,4 +1,4 @@
-import { Clock3, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock3, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { ContactForm } from "./contact-form";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
@@ -36,6 +36,13 @@ export function ContactSection() {
                   <span>
                     <small>Phone / WhatsApp</small>
                     0803 319 9000
+                  </span>
+                </a>
+                <a href="mailto:enquiry@prosperisassociates.com">
+                  <Mail aria-hidden="true" />
+                  <span>
+                    <small>Email</small>
+                    enquiry@prosperisassociates.com
                   </span>
                 </a>
                 <div className="contact-method">

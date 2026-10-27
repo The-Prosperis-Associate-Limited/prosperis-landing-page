@@ -29,6 +29,9 @@ export function SiteFooter() {
             <strong>Let&apos;s discuss your project.</strong>
             <a href="tel:+2348065415059">0806 541 5059</a>
             <a href="tel:+2348033199000">0803 319 9000</a>
+            <a href="mailto:enquiry@prosperisassociates.com">
+              enquiry@prosperisassociates.com
+            </a>
             <span>7 Jibowu, Yaba, Lagos State, Nigeria</span>
             <span>Business hours: 9am – 5pm</span>
           </div>

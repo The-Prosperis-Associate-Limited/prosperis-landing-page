@@ -260,22 +260,18 @@ button {
 }
 
 .brand-mark__symbol {
-  align-items: center;
-  background: var(--blue-deep);
-  border-radius: 10px 10px 10px 2px;
-  color: white;
+  background: white;
+  border-radius: 10px;
   display: flex;
-  font-family: var(--font-display);
-  font-size: 25px;
+  flex-shrink: 0;
   height: 38px;
-  justify-content: center;
-  line-height: 1;
-  transform: rotate(-3deg);
+  overflow: hidden;
   width: 38px;
 }
 
-.brand-mark__symbol span {
-  transform: rotate(3deg) translateY(-1px);
+.brand-mark__symbol img {
+  height: 100%;
+  width: 100%;
 }
 
 .brand-mark__word {
@@ -292,11 +288,6 @@ button {
   font-weight: 650;
   letter-spacing: 0.28em;
   margin-top: 1px;
-}
-
-.brand-mark--inverse .brand-mark__symbol {
-  background: var(--lime);
-  color: var(--blue-dark);
 }
 
 .brand-mark--inverse .brand-mark__word {
@@ -2926,6 +2917,8 @@ button {
   flex-direction: column;
   font-size: 13px;
   gap: 5px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .contact-methods small {
